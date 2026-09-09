@@ -4,9 +4,6 @@ import Image from 'next/image';
 import { BuildingLibraryIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 import { type Language } from '@/lib/i18n';
 
-// Image path — update this to change the facilities hero image
-const IMG_CLASSROOM2 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg';
-
 interface FacilitiesHeroProps {
   lang: Language;
 }
@@ -48,7 +45,7 @@ export default function FacilitiesHero({ lang }: FacilitiesHeroProps) {
           </div>
           <div className="relative animate-fade-in">
             <div className="rounded-3xl overflow-hidden shadow-hero aspect-[4/3]">
-              <Image src={IMG_CLASSROOM2} alt="Modern science laboratory at New Generation School" fill className="object-cover" priority />
+              <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg" alt="Modern science laboratory at New Generation School" fill className="object-cover" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-school-green-dark/40 to-transparent" />
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl px-3 py-2">
                 <p className="text-xs font-bold text-school-green">{lang === 'sw' ? 'Maabara ya Sayansi' : 'Science Laboratory'}</p>

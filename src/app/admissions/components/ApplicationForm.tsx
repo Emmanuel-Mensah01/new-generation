@@ -5,9 +5,6 @@ import Image from 'next/image';
 import { AcademicCapIcon, PhoneIcon, CheckCircleIcon, ArrowRightIcon, ArrowLeftIcon, DocumentTextIcon, CalendarIcon, ClockIcon, UserIcon, PhoneArrowUpRightIcon, ShieldCheckIcon,  } from '@heroicons/react/24/outline';
 import { getTranslations, type Language } from '@/lib/i18n';
 
-// Image path — update this to change the sidebar building image in the application form
-const IMG_BUILDING = '/assets/images/WhatsApp_Image_2026-09-08_at_7.05.57_PM-1788894591347.jpeg';
-
 interface FormData {
   parentName: string;
   childName: string;
@@ -233,7 +230,7 @@ export default function ApplicationForm({ lang }: ApplicationFormProps) {
               </div>
 
               <div className="rounded-3xl overflow-hidden aspect-[4/3]">
-                <Image src={IMG_BUILDING} alt="New Generation School building exterior" width={400} height={300} className="w-full h-full object-cover" />
+                <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.05.57_PM-1788894591347.jpeg" alt="New Generation School building exterior" width={400} height={300} className="w-full h-full object-cover" />
               </div>
 
               <div className="bg-school-yellow/10 border border-school-yellow/30 rounded-2xl p-5">

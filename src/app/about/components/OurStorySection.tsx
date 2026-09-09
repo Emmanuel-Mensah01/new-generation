@@ -4,11 +4,6 @@ import Image from 'next/image';
 import { BookOpenIcon } from '@heroicons/react/24/outline';
 import { type Language } from '@/lib/i18n';
 
-// Image paths — update these to change the Our Story section images
-const IMG_CLASSROOM1 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg';
-const IMG_CLASSROOM2 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg';
-const IMG_CAMPUS3 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.03_PM-1788895054202.jpeg';
-
 interface OurStorySectionProps {
   lang: Language;
 }
@@ -58,14 +53,14 @@ export default function OurStorySection({ lang }: OurStorySectionProps) {
           <div className="animate-on-scroll-right">
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-3xl overflow-hidden aspect-[3/4] shadow-card col-span-1 relative">
-                <Image src={IMG_CLASSROOM1} alt="Students in bright classroom at New Generation School" fill className="object-cover" />
+                <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg" alt="Students in bright classroom at New Generation School" fill className="object-cover" />
               </div>
               <div className="space-y-4">
                 <div className="rounded-3xl overflow-hidden aspect-square shadow-card relative">
-                  <Image src={IMG_CLASSROOM2} alt="Learning environment at New Generation School" fill className="object-cover" />
+                  <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg" alt="Learning environment at New Generation School" fill className="object-cover" />
                 </div>
                 <div className="rounded-3xl overflow-hidden aspect-square shadow-card relative">
-                  <Image src={IMG_CAMPUS3} alt="Students and teachers at New Generation School" fill className="object-cover" />
+                  <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.03_PM-1788895054202.jpeg" alt="Students and teachers at New Generation School" fill className="object-cover" />
                 </div>
               </div>
             </div>

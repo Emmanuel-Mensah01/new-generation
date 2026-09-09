@@ -5,9 +5,6 @@ import { BeakerIcon, ShieldCheckIcon, BookOpenIcon, CalculatorIcon, GlobeAltIcon
 import Link from 'next/link';
 import { getTranslations, type Language } from '@/lib/i18n';
 
-// Image path — update this to change the science lab section image
-const IMG_CLASSROOM2 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg';
-
 interface ScienceLabSectionProps {
   lang: Language;
 }
@@ -33,7 +30,7 @@ export default function ScienceLabSection({ lang }: ScienceLabSectionProps) {
             <div className="animate-on-scroll-right order-2 lg:order-1">
               <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-card">
                 <Image
-                  src={IMG_CLASSROOM2}
+                  src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg"
                   alt="Modern science laboratory supporting NECTA curriculum at New Generation School"
                   fill
                   className="object-cover"

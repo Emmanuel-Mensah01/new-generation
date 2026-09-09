@@ -4,9 +4,6 @@ import Image from 'next/image';
 import { SparklesIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 import { getTranslations, type Language } from '@/lib/i18n';
 
-// Image path — update this to change the admissions hero image
-const IMG_CLASSROOM1 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg';
-
 interface AdmissionsHeroProps {
   lang: Language;
 }
@@ -45,7 +42,7 @@ export default function AdmissionsHero({ lang }: AdmissionsHeroProps) {
           </div>
           <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-hero">
             <Image
-              src={IMG_CLASSROOM1}
+              src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg"
               alt="Students in green uniform standing by yellow school van at New Generation School"
               fill
               className="object-cover"

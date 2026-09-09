@@ -5,11 +5,6 @@ import Image from 'next/image';
 import { AcademicCapIcon, CheckCircleIcon, ArrowRightIcon, BookOpenIcon, BeakerIcon, CalculatorIcon, GlobeAltIcon, MusicalNoteIcon, PaintBrushIcon, SparklesIcon, HeartIcon, UserGroupIcon, StarIcon,  } from '@heroicons/react/24/outline';
 import { getTranslations, type Language } from '@/lib/i18n';
 
-// Image paths — update these to change programme section images
-const IMG_CLASSROOM1 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg';
-const IMG_CLASSROOM2 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg';
-const IMG_PRIMARY_CLASS = '/assets/images/ChatGPT_Image_Sep_9__2026__08_15_30_AM-1788941762942.png';
-
 interface ProgrammesSectionProps {
   lang: Language;
 }
@@ -24,7 +19,7 @@ export default function ProgrammesSection({ lang }: ProgrammesSectionProps) {
       title: t.academics.dayTitle,
       age: t.academics.dayAge,
       desc: t.academics.dayDesc,
-      image: IMG_CLASSROOM1,
+      image: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg',
       alt: 'Day care children in bright, colourful classroom at New Generation School',
       applyLabel: t.academics.applyDay,
       subjects: [
@@ -47,7 +42,7 @@ export default function ProgrammesSection({ lang }: ProgrammesSectionProps) {
       title: t.academics.nurseryTitle,
       age: t.academics.nurseryAge,
       desc: t.academics.nurseryDesc,
-      image: IMG_CLASSROOM2,
+      image: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg',
       alt: 'Nursery classroom with colourful educational displays and happy children',
       applyLabel: t.academics.applyNursery,
       subjects: [
@@ -70,7 +65,7 @@ export default function ProgrammesSection({ lang }: ProgrammesSectionProps) {
       title: t.academics.primaryTitle,
       age: t.academics.primaryAge,
       desc: t.academics.primaryDesc,
-      image: IMG_PRIMARY_CLASS,
+      image: '/assets/images/ChatGPT_Image_Sep_9__2026__08_15_30_AM-1788941762942.png',
       alt: 'Primary classroom with teacher and students engaged in learning at New Generation School',
       applyLabel: t.academics.applyPrimary,
       subjects: [

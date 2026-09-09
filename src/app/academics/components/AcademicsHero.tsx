@@ -4,9 +4,6 @@ import Image from 'next/image';
 import { BookOpenIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 import { type Language } from '@/lib/i18n';
 
-// Image path — update this to change the academics hero image
-const IMG_CLASSROOM3 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788894592396.jpeg';
-
 interface AcademicsHeroProps {
   lang: Language;
 }
@@ -48,7 +45,7 @@ export default function AcademicsHero({ lang }: AcademicsHeroProps) {
           </div>
           <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-hero">
             <Image
-              src={IMG_CLASSROOM3}
+              src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788894592396.jpeg"
               alt="Teacher with students engaged in learning at New Generation School"
               fill
               className="object-cover"

@@ -10,9 +10,6 @@ import {
 } from '@heroicons/react/24/outline';
 import { getTranslations, type Language } from '@/lib/i18n';
 
-// Image path — update this to change the school logo in the navbar
-const IMG_LOGO = '/assets/images/WhatsApp_Image_2026-09-08_at_7.05.23_PM-1788894389720.jpeg';
-
 interface NavbarProps {
   lang: Language;
   setLang: (lang: Language) => void;
@@ -89,7 +86,7 @@ export default function Navbar({ lang, setLang, activePath = '/' }: NavbarProps)
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
             <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md group-hover:scale-105 transition-transform flex-shrink-0 border-2 border-school-yellow/30">
-              <Image src={IMG_LOGO} alt="New Generation School Logo" width={40} height={40} className="w-full h-full object-cover" priority />
+              <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.05.23_PM-1788894389720.jpeg" alt="New Generation School Logo" width={40} height={40} className="w-full h-full object-cover" priority />
             </div>
             <div>
               <div className="font-extrabold text-sm text-school-green leading-tight">New Generation</div>

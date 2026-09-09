@@ -4,9 +4,6 @@ import Image from 'next/image';
 import { SparklesIcon } from '@heroicons/react/24/outline';
 import { type Language } from '@/lib/i18n';
 
-// Image path — update this to change the about page hero image
-const IMG_BUILDING = '/assets/images/WhatsApp_Image_2026-09-08_at_7.05.57_PM-1788894591347.jpeg';
-
 interface AboutHeroProps {
   lang: Language;
 }
@@ -47,7 +44,7 @@ export default function AboutHero({ lang }: AboutHeroProps) {
           </div>
           <div className="relative animate-fade-in">
             <div className="rounded-3xl overflow-hidden shadow-hero aspect-[4/3]">
-              <Image src={IMG_BUILDING} alt="New Generation School main building with Tanzanian flag and colorful garden" fill className="object-cover" priority />
+              <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.05.57_PM-1788894591347.jpeg" alt="New Generation School main building with Tanzanian flag and colorful garden" fill className="object-cover" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-school-green-dark/40 to-transparent" />
             </div>
             <div className="absolute -bottom-5 -left-5 bg-school-yellow rounded-2xl p-4 shadow-float">

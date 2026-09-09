@@ -8,38 +8,21 @@ import Navbar from '@/components/shared/Navbar';
 import Footer from '@/components/shared/Footer';
 import Icon from '@/components/ui/AppIcon';
 
-// ─── Image Paths ──────────────────────────────────────────────────────────────
-const IMG_LOGO = '/assets/images/WhatsApp_Image_2026-09-08_at_7.05.23_PM-1788894389720.jpeg';
-const IMG_HERO_BUILDING = '/assets/images/ChatGPT_Image_Sep_9__2026__08_21_56_AM-1788943777277.png';
-const IMG_BUILDING = '/assets/images/WhatsApp_Image_2026-09-08_at_7.05.57_PM-1788894591347.jpeg';
-const IMG_BUILDING_ALT = '/assets/images/build-1788890877045.jpeg';
-const IMG_CLASSROOM1 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg';
-const IMG_CLASSROOM2 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg';
-const IMG_CLASSROOM3 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788894592396.jpeg';
-const IMG_PRIMARY_CLASS = '/assets/images/ChatGPT_Image_Sep_9__2026__08_15_30_AM-1788941762942.png';
-const IMG_CAMPUS1 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788895053341.jpeg';
-const IMG_CAMPUS2 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788895052060.jpeg';
-const IMG_CAMPUS3 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.03_PM-1788895054202.jpeg';
-const IMG_CAMPUS4 = '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.04_PM-1788895054747.jpeg';
-const IMG_SCHOOL_BUS = '/assets/images/new-gen_schoo_l_bus-1788940178107.png';
-const IMG_NURSERY = '/assets/images/ChatGPT_Image_Sep_6__2026__03_35_32_PM-1788890911576.png';
-const IMG_NURSERY2 = '/assets/images/ChatGPT_Image_Sep_6__2026__03_37_04_PM-1788890914979.png';
-
 // ─── Data ────────────────────────────────────────────────────────────────────
 
 const GALLERY_ITEMS = [
-  { src: IMG_HERO_BUILDING, alt: 'New Generation School main building exterior', label: 'Our School' },
-  { src: IMG_CLASSROOM1, alt: 'Students in bright classroom at New Generation School', label: 'Our Classrooms' },
-  { src: IMG_CLASSROOM3, alt: 'Learning environment at New Generation School', label: 'Learning in Action' },
-  { src: IMG_CAMPUS1, alt: 'School facilities at New Generation School', label: 'School Facilities' },
-  { src: IMG_CAMPUS3, alt: 'Campus life at New Generation School', label: 'Campus Life' },
-  { src: IMG_CAMPUS4, alt: 'School activities at New Generation School', label: 'School Activities' },
-  { src: IMG_SCHOOL_BUS, alt: 'Students and teachers at New Generation School', label: 'Students & Teachers' },
-  { src: IMG_CAMPUS2, alt: 'School environment at New Generation School', label: 'Our Environment' },
-  { src: IMG_NURSERY, alt: 'Students engaged in learning at New Generation School', label: 'Engaged Learning' },
-  { src: IMG_NURSERY2, alt: 'Nursery children at New Generation School', label: 'Nursery Division' },
-  { src: IMG_BUILDING_ALT, alt: 'School building at New Generation School', label: 'School Building' },
-  { src: IMG_PRIMARY_CLASS, alt: 'Primary students at New Generation School', label: 'Primary Division' },
+  { src: '/assets/images/ChatGPT_Image_Sep_9__2026__08_21_56_AM-1788943777277.png', alt: 'New Generation School main building exterior', label: 'Our School' },
+  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg', alt: 'Students in bright classroom at New Generation School', label: 'Our Classrooms' },
+  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788894592396.jpeg', alt: 'Learning environment at New Generation School', label: 'Learning in Action' },
+  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788895053341.jpeg', alt: 'School facilities at New Generation School', label: 'School Facilities' },
+  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.03_PM-1788895054202.jpeg', alt: 'Campus life at New Generation School', label: 'Campus Life' },
+  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.04_PM-1788895054747.jpeg', alt: 'School activities at New Generation School', label: 'School Activities' },
+  { src: '/assets/images/new-gen_schoo_l_bus-1788940178107.png', alt: 'Students and teachers at New Generation School', label: 'Students & Teachers' },
+  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788895052060.jpeg', alt: 'School environment at New Generation School', label: 'Our Environment' },
+  { src: '/assets/images/ChatGPT_Image_Sep_6__2026__03_35_32_PM-1788890911576.png', alt: 'Students engaged in learning at New Generation School', label: 'Engaged Learning' },
+  { src: '/assets/images/ChatGPT_Image_Sep_6__2026__03_37_04_PM-1788890914979.png', alt: 'Nursery children at New Generation School', label: 'Nursery Division' },
+  { src: '/assets/images/build-1788890877045.jpeg', alt: 'School building at New Generation School', label: 'School Building' },
+  { src: '/assets/images/ChatGPT_Image_Sep_9__2026__08_15_30_AM-1788941762942.png', alt: 'Primary students at New Generation School', label: 'Primary Division' },
 ];
 
 const NURSERY_SUBJECTS = [
@@ -227,9 +210,6 @@ export default function HomePage() {
     }
   };
 
-  const heroImages = [IMG_HERO_BUILDING];
-  const heroAlts = ['New Generation School building — a modern and welcoming learning environment'];
-
   return (
     <div className="min-h-screen font-sans bg-school-off-white">
       <Navbar lang={lang} setLang={setLang} activePath="/" />
@@ -253,7 +233,7 @@ export default function HomePage() {
             <div className="text-white space-y-7 animate-fade-up">
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 rounded-2xl overflow-hidden shadow-xl border-2 border-school-yellow/50 flex-shrink-0">
-                  <Image src={IMG_LOGO} alt="New Generation School Logo" width={56} height={56} className="w-full h-full object-cover" priority />
+                  <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.05.23_PM-1788894389720.jpeg" alt="New Generation School Logo" width={56} height={56} className="w-full h-full object-cover" priority />
                 </div>
                 <div>
                   <p className="font-extrabold text-white text-base leading-tight">New Generation School</p>
@@ -295,7 +275,7 @@ export default function HomePage() {
 
             <div className="relative animate-fade-in">
               <div className="relative rounded-3xl overflow-hidden shadow-hero aspect-[4/3]">
-                <Image src={heroImages[0]} alt={heroAlts[0]} fill className="object-cover" priority />
+                <Image src="/assets/images/ChatGPT_Image_Sep_9__2026__08_21_56_AM-1788943777277.png" alt="New Generation School building — a modern and welcoming learning environment" fill className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-school-green-dark/55 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
                   <div className="bg-white/90 backdrop-blur-sm rounded-xl px-3 py-2">
@@ -314,7 +294,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 rounded-2xl overflow-hidden border-4 border-white shadow-card">
-                <Image src={IMG_CLASSROOM1} alt="New Generation School classroom" fill className="object-cover" />
+                <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788895053341.jpeg" alt="New Generation School classroom" fill className="object-cover" />
               </div>
               <div className="absolute top-1/2 -right-8 bg-school-green text-white rounded-2xl shadow-card p-3 hidden xl:flex flex-col items-center gap-1">
                 <StarIcon className="w-5 h-5 text-school-yellow" />
@@ -393,14 +373,14 @@ export default function HomePage() {
             <div className="space-y-4 animate-on-scroll-right">
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-2xl overflow-hidden aspect-square shadow-card relative">
-                  <Image src={IMG_BUILDING} alt="New Generation School building exterior with Tanzanian flag" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                  <Image src="/assets/images/build-1788890877045.jpeg" alt="New Generation School building exterior with Tanzanian flag" fill className="object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="rounded-2xl overflow-hidden aspect-square shadow-card relative">
-                  <Image src={IMG_CLASSROOM1} alt="Students in bright classroom with educational posters" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                  <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg" alt="Students in bright classroom with educational posters" fill className="object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
               </div>
               <div className="rounded-2xl overflow-hidden shadow-card relative" style={{ height: '208px' }}>
-                <Image src={IMG_CAMPUS3} alt="Students in green uniform at New Generation School campus" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.03_PM-1788895054202.jpeg" alt="Students in green uniform at New Generation School campus" fill className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="grid grid-cols-2 gap-3">
                 {[
@@ -435,7 +415,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <div className="lg:col-span-2 relative rounded-3xl overflow-hidden min-h-[280px] group bento-card animate-on-scroll">
-              <Image src={IMG_CLASSROOM2} alt="Students actively learning in a colorful classroom at New Generation School" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+              <Image src="/assets/images/home_image-1788940686115.png" alt="Students actively learning in a colorful classroom at New Generation School" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-r from-school-green-dark/92 via-school-green-dark/60 to-transparent" />
               <div className="absolute inset-0 p-8 flex flex-col justify-end">
                 <div className="w-10 h-10 rounded-xl bg-school-yellow flex items-center justify-center mb-4"><AcademicCapIcon className="w-5 h-5 text-school-foreground" /></div>
@@ -465,7 +445,7 @@ export default function HomePage() {
               <p className="text-school-muted text-sm leading-relaxed">{lang === 'sw' ? 'Masomo yanafanywa kwa Kiingereza na Kiswahili ili kuhakikisha uelewa kamili.' : 'English-medium instruction with Kiswahili support, preparing students for national and global success.'}</p>
             </div>
             <div className="relative rounded-3xl overflow-hidden min-h-[200px] group bento-card animate-on-scroll" style={{ transitionDelay: '250ms' }}>
-              <Image src={IMG_CLASSROOM2} alt="Science laboratory with equipment for hands-on student experiments" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+              <Image src="/assets/images/sch lab.png" alt="Science laboratory with equipment for hands-on student experiments" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-school-green-dark/90 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <div className="flex items-center gap-2 mb-2"><BeakerIcon className="w-4 h-4 text-school-yellow" /><span className="text-school-yellow text-xs font-bold uppercase tracking-wider">{lang === 'sw' ? 'Maabara' : 'Science Lab'}</span></div>
@@ -495,7 +475,7 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-2 gap-4 animate-on-scroll-right">
               <div className="col-span-2 campus-card rounded-2xl overflow-hidden" style={{ height: '220px' }}>
-                <Image src={IMG_BUILDING} alt="New Generation School main building with colorful garden and Tanzanian flag" fill className="object-cover" />
+                <Image src="/assets/images/ChatGPT_Image_Sep_9__2026__08_21_56_AM-1788943777277.png" alt="New Generation School main building with colorful garden and Tanzanian flag" fill className="object-cover" />
                 <div className="overlay" />
                 <div className="info">
                   <div>
@@ -507,12 +487,12 @@ export default function HomePage() {
                 <div className="absolute top-3 right-3 bg-school-green text-white text-xs font-bold px-2.5 py-1 rounded-full">{t.campus.label}</div>
               </div>
               <div className="campus-card rounded-2xl overflow-hidden" style={{ height: '160px' }}>
-                <Image src={IMG_CLASSROOM2} alt="Classroom with chalkboard and colorful educational displays" fill className="object-cover" />
+                <Image src="/assets/images/ChatGPT_Image_Sep_6__2026__03_39_26_PM-1788890914978.png" alt="Classroom with chalkboard and colorful educational displays" fill className="object-cover" />
                 <div className="overlay" />
                 <div className="info"><p className="text-white text-xs font-semibold">{t.facilities.classrooms}</p></div>
               </div>
               <div className="campus-card rounded-2xl overflow-hidden" style={{ height: '160px' }}>
-                <Image src={IMG_CLASSROOM2} alt="Science lab with equipment for student experiments" fill className="object-cover" />
+                <Image src="/assets/images/sch lab.png" alt="Science lab with equipment for student experiments" fill className="object-cover" />
                 <div className="overlay" />
                 <div className="info"><p className="text-white text-xs font-semibold">{lang === 'sw' ? 'Maabara ya Sayansi' : 'Science Lab'}</p></div>
               </div>
@@ -540,7 +520,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-10 items-center animate-on-scroll">
             <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-card">
               <Image
-                src={activeTab === 0 ? IMG_NURSERY : activeTab === 1 ? IMG_CLASSROOM1 : IMG_CLASSROOM2}
+                src={activeTab === 0 ? '/assets/images/ChatGPT_Image_Sep_6__2026__03_37_04_PM-1788890914979.png' : activeTab === 1 ? '/assets/images/ChatGPT_Image_Sep_6__2026__03_35_32_PM-1788890911576.png' : '/assets/images/ChatGPT_Image_Sep_9__2026__08_15_30_AM-1788941762942.png'}
                 alt={activeTab === 0 ? 'Day care children in bright classroom' : activeTab === 1 ? 'Nursery classroom with educational displays' : 'Primary classroom with teacher'}
                 fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-school-green-dark/50 to-transparent" />
@@ -650,12 +630,12 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { img: IMG_CLASSROOM2, alt: 'Modern classroom with chalkboard and educational displays', label: t.facilities.classrooms, tag: 'Academic', icon: AcademicCapIcon },
-              { img: IMG_CAMPUS4, alt: 'Students in uniform at school sports area', label: t.facilities.sports, tag: 'Athletics', icon: TrophyIcon },
-              { img: IMG_CLASSROOM3, alt: 'Science laboratory with equipment for student experiments', label: lang === 'sw' ? 'Maabara ya Sayansi' : 'Science Lab', tag: 'Science', icon: BeakerIcon },
-              { img: IMG_CAMPUS1, alt: 'Teacher with students in well-equipped classroom', label: t.facilities.hall, tag: 'Events', icon: UserGroupIcon },
-              { img: IMG_NURSERY, alt: 'School garden with colorful plants and decorative animals', label: t.facilities.garden, tag: 'Outdoor', icon: SparklesIcon },
-              { img: IMG_SCHOOL_BUS, alt: 'Yellow school van for student transport', label: t.facilities.transport, tag: 'Transport', icon: TruckIcon },
+              { img: '/assets/images/ChatGPT_Image_Sep_6__2026__03_35_32_PM-1788890911576.png', alt: 'Modern classroom with chalkboard and educational displays', label: t.facilities.classrooms, tag: 'Academic', icon: AcademicCapIcon },
+              { img: '/assets/images/sports.png', alt: 'Students in uniform at school sports area', label: t.facilities.sports, tag: 'Athletics', icon: TrophyIcon },
+              { img: '/assets/images/sch lab.png', alt: 'Science laboratory with equipment for student experiments', label: lang === 'sw' ? 'Maabara ya Sayansi' : 'Science Lab', tag: 'Science', icon: BeakerIcon },
+              { img: '/assets/images/assembly hall.png', alt: 'Teacher with students in well-equipped classroom', label: t.facilities.hall, tag: 'Events', icon: UserGroupIcon },
+              { img: '/assets/images/garden.png', alt: 'School garden with colorful plants and decorative animals', label: t.facilities.garden, tag: 'Outdoor', icon: SparklesIcon },
+              { img: '/assets/images/new-gen_schoo_l_bus-1788940178107.png', alt: 'Yellow school van for student transport', label: t.facilities.transport, tag: 'Transport', icon: TruckIcon },
             ].map((fac, i) => (
               <div key={i} className="facility-card animate-on-scroll" style={{ transitionDelay: `${i * 80}ms` }}>
                 <div className="relative aspect-video">
@@ -841,7 +821,7 @@ export default function HomePage() {
             </div>
             <div className="relative animate-on-scroll-right">
               <div className="rounded-3xl overflow-hidden aspect-[4/3] shadow-hero">
-                <Image src={IMG_SCHOOL_BUS} alt="Students in green uniform standing by yellow school van at New Generation School" fill className="object-cover" />
+                <Image src="/assets/images/ChatGPT_Image_Sep_6__2026__03_43_29_PM-1788890914868.png" alt="Students in green uniform standing by yellow school van at New Generation School" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-school-green-dark/40 to-transparent" />
                 <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl px-3 py-2">
                   <p className="text-xs font-bold text-school-green">🎓 {t.admissions.enrollLabel}</p>
