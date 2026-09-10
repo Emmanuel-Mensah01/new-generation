@@ -336,9 +336,9 @@ export default function HomePage() {
       <section className="bg-white border-b border-school-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-school-border">
-            <StatCounter value={400} suffix="+" label={t.stats.students} />
+            <StatCounter value={500} suffix="+" label={t.stats.students} />
             <StatCounter value={20} suffix="+" label={t.stats.teachers} />
-            <StatCounter value={5} suffix="+" label={t.stats.years} />
+            <StatCounter value={10} suffix="+" label={t.stats.years} />
             <StatCounter value={98} suffix="%" label={t.stats.satisfaction} />
           </div>
         </div>
