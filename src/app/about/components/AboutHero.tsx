@@ -50,7 +50,7 @@ export default function AboutHero({ lang }: AboutHeroProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-school-green-dark/40 to-transparent" />
             </div>
             <div className="absolute -bottom-5 -left-5 bg-school-yellow rounded-2xl p-4 shadow-float">
-              <div className="text-3xl font-extrabold text-school-foreground">400+</div>
+              <div className="text-3xl font-extrabold text-school-foreground">500+</div>
               <div className="text-xs font-semibold text-school-foreground/70 mt-0.5">{lang === 'sw' ? 'Familia Zinazomwamini' : 'Families Trust Us'}</div>
             </div>
             <div className="absolute -top-4 -right-4 bg-white rounded-2xl p-3 shadow-card text-center">
