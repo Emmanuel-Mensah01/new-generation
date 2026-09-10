@@ -315,7 +315,7 @@ export default function HomePage() {
                   <TrophyIcon className="w-5 h-5 text-school-foreground" />
                 </div>
                 <div>
-                  <p className="font-extrabold text-sm text-school-foreground">5+</p>
+                  <p className="font-extrabold text-sm text-school-foreground">10+</p>
                   <p className="text-xs text-gray-500">{t.hero.yearsLabel}</p>
                 </div>
               </div>
@@ -622,7 +622,7 @@ export default function HomePage() {
             </div>
             <div className="flex items-center gap-5">
               <div className="text-right">
-                <p className="text-3xl font-extrabold text-school-yellow">400+</p>
+                <p className="text-3xl font-extrabold text-school-yellow">500+</p>
                 <p className="text-white/65 text-xs">{t.gallery.families}</p>
               </div>
               <Link href="/gallery" className="btn-outline-white flex-shrink-0">

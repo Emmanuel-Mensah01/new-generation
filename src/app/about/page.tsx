@@ -6,6 +6,7 @@ import Footer from '@/components/shared/Footer';
 import AboutHero from './components/AboutHero';
 import OurStorySection from './components/OurStorySection';
 import ValuesSection from './components/ValuesSection';
+import LeadershipSection from './components/LeadershipSection';
 
 function useScrollAnimation() {
   useEffect(() => {
@@ -30,6 +31,7 @@ export default function AboutPage() {
         <AboutHero lang={lang} />
         <OurStorySection lang={lang} />
         <ValuesSection lang={lang} />
+        <LeadershipSection lang={lang} />
       </main>
       <Footer lang={lang} />
     </div>
