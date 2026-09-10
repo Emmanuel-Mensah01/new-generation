@@ -52,7 +52,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   Conduct: 'bg-red-100 text-red-700', Mwenendo: 'bg-red-100 text-red-700',
   Uniform: 'bg-purple-100 text-purple-700', Sare: 'bg-purple-100 text-purple-700',
   Safety: 'bg-orange-100 text-orange-700', Usalama: 'bg-orange-100 text-orange-700',
-  Respect: 'bg-school-green/10 text-school-green', Heshima: 'bg-school-green/10 text-school-green',
+  Respect: 'bg-school-pink/10 text-school-pink', Heshima: 'bg-school-pink/10 text-school-pink',
   Campus: 'bg-teal-100 text-teal-700', Kampasi: 'bg-teal-100 text-teal-700',
   Responsibility: 'bg-indigo-100 text-indigo-700', Uwajibikaji: 'bg-indigo-100 text-indigo-700',
   Language: 'bg-pink-100 text-pink-700', Lugha: 'bg-pink-100 text-pink-700',
@@ -82,8 +82,8 @@ export default function RulesList({ lang }: RulesListProps) {
             {categorySummary.map((cat, i) => (
               <div key={cat.label} className="text-center animate-on-scroll-up" style={{ transitionDelay: `${i * 60}ms` }}>
                 <div className="text-2xl mb-1">{cat.icon}</div>
-                <div className="text-lg font-extrabold text-school-green">{cat.count}</div>
-                <div className="text-xs text-school-muted font-medium">{cat.label}</div>
+                <div className="text-lg font-extrabold text-school-pink">{cat.count}</div>
+                <div className="text-xs text-gray-500 font-medium">{cat.label}</div>
               </div>
             ))}
           </div>
@@ -93,14 +93,14 @@ export default function RulesList({ lang }: RulesListProps) {
       {/* Language Switcher */}
       <section className="py-5 bg-school-off-white border-b border-school-border sticky top-[88px] lg:top-[104px] z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between flex-wrap gap-4">
-          <p className="text-sm text-school-muted font-medium">
+          <p className="text-sm text-gray-600 font-medium">
             {lang === 'sw' ? 'Kanuni zinapatikana kwa Kiingereza na Kiswahili' : 'Rules available in English and Kiswahili'}
           </p>
           <div className="flex items-center gap-1.5 bg-white rounded-xl p-1 border border-school-border shadow-sm">
-            <button onClick={() => setRulesLang('en')} className={`px-5 py-2 rounded-lg text-sm font-bold transition-all ${rulesLang === 'en' ? 'bg-school-green text-white shadow-md' : 'text-school-muted hover:text-school-foreground'}`}>
+            <button onClick={() => setRulesLang('en')} className={`px-5 py-2 rounded-lg text-sm font-bold transition-all ${rulesLang === 'en' ? 'bg-school-pink text-white shadow-md' : 'text-gray-500 hover:text-school-foreground'}`}>
               🇬🇧 English
             </button>
-            <button onClick={() => setRulesLang('sw')} className={`px-5 py-2 rounded-lg text-sm font-bold transition-all ${rulesLang === 'sw' ? 'bg-school-green text-white shadow-md' : 'text-school-muted hover:text-school-foreground'}`}>
+            <button onClick={() => setRulesLang('sw')} className={`px-5 py-2 rounded-lg text-sm font-bold transition-all ${rulesLang === 'sw' ? 'bg-school-pink text-white shadow-md' : 'text-gray-500 hover:text-school-foreground'}`}>
               🇹🇿 Kiswahili
             </button>
           </div>
@@ -116,7 +116,7 @@ export default function RulesList({ lang }: RulesListProps) {
               <p className="font-bold text-school-foreground mb-1">
                 {lang === 'sw' ? 'Taarifa Muhimu' : 'Important Notice'}
               </p>
-              <p className="text-sm text-school-muted">
+              <p className="text-sm text-gray-600">
                 {lang === 'sw' ?'Kanuni hizi zinatumika kwa wanafunzi wote wa Shule ya New Generation. Wazazi na walezi wanashauriwa kuzisoma pamoja na watoto wao.' :'These rules apply to all students of New Generation School. Parents and guardians are encouraged to read them together with their children.'}
               </p>
             </div>
@@ -130,9 +130,9 @@ export default function RulesList({ lang }: RulesListProps) {
           <div className="grid sm:grid-cols-2 gap-4">
             {rules.map((item, i) => (
               <div key={i} className="rule-item animate-on-scroll" style={{ transitionDelay: `${i * 35}ms` }}>
-                <div className="w-8 h-8 rounded-full bg-school-green text-white text-xs font-bold flex items-center justify-center flex-shrink-0">{i + 1}</div>
+                <div className="w-8 h-8 rounded-full bg-school-pink text-white text-xs font-bold flex items-center justify-center flex-shrink-0">{i + 1}</div>
                 <div className="flex items-start gap-2 flex-1">
-                  <item.icon className="w-4 h-4 text-school-green flex-shrink-0 mt-0.5" />
+                  <item.icon className="w-4 h-4 text-school-pink flex-shrink-0 mt-0.5" />
                   <div>
                     <span className={`inline-block text-xs font-bold px-2 py-0.5 rounded-full mb-1 ${CATEGORY_COLORS[item.category] || 'bg-gray-100 text-gray-700'}`}>{item.category}</span>
                     <p className="text-sm text-school-foreground leading-relaxed">{item.rule}</p>
@@ -142,8 +142,8 @@ export default function RulesList({ lang }: RulesListProps) {
             ))}
           </div>
           <div className="mt-8 bg-school-muted/60 rounded-2xl p-5 flex items-start gap-3 border border-school-border">
-            <ShieldCheckIcon className="w-5 h-5 text-school-green flex-shrink-0 mt-0.5" />
-            <p className="text-sm text-school-muted">
+            <ShieldCheckIcon className="w-5 h-5 text-school-pink flex-shrink-0 mt-0.5" />
+            <p className="text-sm text-gray-600">
               {lang === 'sw' ?'Kanuni hizi zinaweza kubadilishwa wakati wowote na uongozi wa shule. Wazazi wataarifiwa kuhusu mabadiliko yoyote.' :'These rules may be updated at any time by school management. Parents will be notified of any changes.'}
             </p>
           </div>

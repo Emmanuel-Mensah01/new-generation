@@ -15,18 +15,150 @@ interface GalleryItem {
 }
 
 const GALLERY_ITEMS: GalleryItem[] = [
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.05.57_PM-1788894591347.jpeg', alt: 'New Generation School main building with Tanzanian flag and colorful garden', label_en: 'Our School Building', label_sw: 'Jengo Letu la Shule', category_en: 'Campus', category_sw: 'Kampasi', span: 'col-span-2 row-span-2' },
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg', alt: 'Bright classroom with students in white and yellow uniforms at New Generation School', label_en: 'Modern Classrooms', label_sw: 'Madarasa ya Kisasa', category_en: 'Classrooms', category_sw: 'Madarasa' },
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg', alt: 'Science laboratory with equipment for student experiments at New Generation School', label_en: 'Science Laboratory', label_sw: 'Maabara ya Sayansi', category_en: 'Facilities', category_sw: 'Vifaa' },
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788894592396.jpeg', alt: 'Classroom with chalkboard showing lessons and colorful educational displays', label_en: 'Learning in Action', label_sw: 'Kujifunza kwa Vitendo', category_en: 'Classrooms', category_sw: 'Madarasa' },
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788895053341.jpeg', alt: 'New Generation School real photo of school campus and students', label_en: 'Campus Life', label_sw: 'Maisha ya Kampasi', category_en: 'Campus', category_sw: 'Kampasi', span: 'col-span-2' },
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788895052060.jpeg', alt: 'New Generation School real photo of school activities and learning', label_en: 'School Activities', label_sw: 'Shughuli za Shule', category_en: 'Students', category_sw: 'Wanafunzi' },
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.03_PM-1788895054202.jpeg', alt: 'New Generation School real photo of students and teachers in classroom', label_en: 'Students & Teachers', label_sw: 'Wanafunzi na Walimu', category_en: 'Teachers', category_sw: 'Walimu' },
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.04_PM-1788895054747.jpeg', alt: 'New Generation School real photo of school environment and facilities', label_en: 'Our Environment', label_sw: 'Mazingira Yetu', category_en: 'Facilities', category_sw: 'Vifaa' },
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg', alt: 'Students seated at desks with educational posters on walls in bright classroom', label_en: 'Engaged Learning', label_sw: 'Kujifunza kwa Makini', category_en: 'Classrooms', category_sw: 'Madarasa' },
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg', alt: 'Colorful classroom with alphabet, numbers and shapes displays for young learners', label_en: 'Vibrant Environment', label_sw: 'Mazingira ya Uchangamfu', category_en: 'Campus', category_sw: 'Kampasi' },
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788894592396.jpeg', alt: 'Teacher with students in classroom with educational posters at New Generation School', label_en: 'Dedicated Teachers', label_sw: 'Walimu Waliojitoa', category_en: 'Teachers', category_sw: 'Walimu' },
-  { src: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788895052060.jpeg', alt: 'Five students in green sweater uniform standing by yellow school van', label_en: 'Our Students', label_sw: 'Wanafunzi Wetu', category_en: 'Students', category_sw: 'Wanafunzi' },
+  // ── CAMPUS ──────────────────────────────────────────────────────────────────
+  {
+    src: '/assets/images/ChatGPT_Image_Sep_9__2026__08_21_56_AM-1788943777277.png',
+    alt: 'New Generation School main building with Tanzanian flag and colorful garden',
+    label_en: 'Our School Building', label_sw: 'Jengo Letu la Shule',
+    category_en: 'Campus', category_sw: 'Kampasi', span: 'col-span-2 row-span-2',
+  },
+  {
+    src: '/assets/images/campus.png',
+    alt: 'New Generation School campus grounds with students and colorful buildings',
+    label_en: 'Campus Life', label_sw: 'Maisha ya Kampasi',
+    category_en: 'Campus', category_sw: 'Kampasi', span: 'col-span-2',
+  },
+  {
+    src: '/assets/images/assem_hall-1789022263231.png',
+    alt: 'School assembly hall with red corridor and students gathered',
+    label_en: 'Assembly Hall', label_sw: 'Ukumbi wa Mkutano',
+    category_en: 'Campus', category_sw: 'Kampasi',
+  },
+  {
+    src: '/assets/images/hall2-1789022264017.png',
+    alt: 'Colorful school building compound with bright exterior walls',
+    label_en: 'Beautiful Campus', label_sw: 'Eneo la Shule',
+    category_en: 'Campus', category_sw: 'Kampasi',
+  },
+  {
+    src: '/assets/images/home_image-1788940686115.png',
+    alt: 'New Generation School front view with students in uniform',
+    label_en: 'School Entrance', label_sw: 'Mlango wa Shule',
+    category_en: 'Campus', category_sw: 'Kampasi',
+  },
+  {
+    src: '/assets/images/new-gen_schoo_l_bus-1788940178107.png',
+    alt: 'New Generation School yellow bus parked outside school compound',
+    label_en: 'School Transport', label_sw: 'Usafiri wa Shule',
+    category_en: 'Campus', category_sw: 'Kampasi',
+  },
+
+  // ── CLASSROOMS ───────────────────────────────────────────────────────────────
+  {
+    src: '/assets/images/mor classroom.png',
+    alt: 'Bright classroom with students in white and yellow uniforms at New Generation School',
+    label_en: 'Modern Classrooms', label_sw: 'Madarasa ya Kisasa',
+    category_en: 'Classrooms', category_sw: 'Madarasa', span: 'col-span-2',
+  },
+  {
+    src: '/assets/images/ChatGPT_Image_Sep_10__2026__06_44_57_AM-1789022980560.png',
+    alt: 'Students in school uniform seated at desks actively studying and learning in classroom',
+    label_en: 'Active Studies', label_sw: 'Kujifunza kwa Vitendo',
+    category_en: 'Classrooms', category_sw: 'Madarasa',
+  },
+  {
+    src: '/assets/images/inaction.png',
+    alt: 'Students engaged in group learning activity inside a well-lit classroom',
+    label_en: 'Student Learning', label_sw: 'Kujifunza kwa Pamoja',
+    category_en: 'Classrooms', category_sw: 'Madarasa',
+  },
+  {
+    src: '/assets/images/ChatGPT_Image_Sep_9__2026__08_15_30_AM-1788941762942.png',
+    alt: 'Teacher leading an interactive lesson with students in a colourful classroom',
+    label_en: 'Birthday Celebrations', label_sw: 'Masomo ya Maingiliano',
+    category_en: 'Classrooms', category_sw: 'Madarasa',
+  },
+  {
+    src: '/assets/images/lesson.png',
+    alt: 'Primary school students writing in exercise books during a class session',
+    label_en: 'Interactive Session', label_sw: 'Kipindi cha Darasa',
+    category_en: 'Classrooms', category_sw: 'Madarasa',
+  },
+
+  // ── FACILITIES ───────────────────────────────────────────────────────────────
+  {
+    src: '/assets/images/sch_lab-1789024389935.png',
+    alt: 'Science laboratory with equipment for student experiments at New Generation School',
+    label_en: 'Science Laboratory', label_sw: 'Maabara ya Sayansi',
+    category_en: 'Facilities', category_sw: 'Vifaa', span: 'col-span-2',
+  },
+  {
+    src: '/assets/images/hall2-1789022264017.png',
+    alt: 'New Generation School well-maintained facilities and learning environment',
+    label_en: 'Clean Environment', label_sw: 'Mazingira Yetu',
+    category_en: 'Facilities', category_sw: 'Vifaa',
+  },
+  {
+    src: '/assets/images/ChatGPT_Image_Sep_10__2026__07_17_53_AM-1789024697690.png',
+    alt: 'School library with bookshelves and reading area for students',
+    label_en: 'School Library', label_sw: 'Maktaba ya Shule',
+    category_en: 'Facilities', category_sw: 'Vifaa',
+  },
+  {
+    src: '/assets/images/sports-1789024397944.png',
+    alt: 'School sports ground and outdoor play area for students',
+    label_en: 'Sports Ground', label_sw: 'Uwanja wa Michezo',
+    category_en: 'Facilities', category_sw: 'Vifaa',
+  },
+  {
+    src: '/assets/images/it.png',
+    alt: 'School computer lab with modern computers for student use',
+    label_en: 'Computer Lab', label_sw: 'Maabara ya Kompyuta',
+    category_en: 'Facilities', category_sw: 'Vifaa',
+  },
+ 
+
+  // ── STUDENTS ─────────────────────────────────────────────────────────────────
+  {
+    src: '/assets/images/campus.png',
+    alt: 'New Generation School students engaged in school activities and learning',
+    label_en: 'Students time', label_sw: 'Shughuli za Shule',
+    category_en: 'Students', category_sw: 'Wanafunzi', span: 'col-span-2',
+  },
+  {
+    src: '/assets/images/ChatGPT_Image_Sep_10__2026__06_59_32_AM-1789023678596.png',
+    alt: 'Students in green sweater uniform standing together at New Generation School',
+    label_en: 'Happy Students', label_sw: 'Wanafunzi Wetu',
+    category_en: 'Students', category_sw: 'Wanafunzi',
+  },
+  {
+    src: '/assets/images/grad_boys-1789020217320.png',
+    alt: 'Graduating students in caps and gowns celebrating their achievement',
+    label_en: 'Graduation Day', label_sw: 'Siku ya Kuhitimu',
+    category_en: 'Students', category_sw: 'Wanafunzi',
+  },
+  {
+    src: '/assets/images/grad_boys__2_-1789020217703.png',
+    alt: 'Students in graduation attire posing proudly after ceremony',
+    label_en: 'Proud Graduates', label_sw: 'Wahitimu Wanaojivunia',
+    category_en: 'Students', category_sw: 'Wanafunzi',
+  },
+  {
+    src: '/assets/images/ChatGPT_Image_Sep_10__2026__06_55_11_AM-1789023677412.png',
+    alt: 'Young students in uniform participating in a school event',
+    label_en: 'Student Events', label_sw: 'Matukio ya Wanafunzi',
+    category_en: 'Students', category_sw: 'Wanafunzi',
+  },
+ 
+
+  // ── TEACHERS ─────────────────────────────────────────────────────────────────
+  
+  {
+    src: '/assets/images/ChatGPT_Image_Sep_10__2026__07_09_11_AM-1789024194623.png',
+    alt: 'Qualified teaching staff at New Generation School',
+    label_en: 'Our Teaching Staff', label_sw: 'Wafanyakazi Wetu wa Kufundisha',
+    category_en: 'Teachers', category_sw: 'Walimu',
+  },
 ];
 
 interface GalleryGridProps {
@@ -55,7 +187,7 @@ export default function GalleryGrid({ lang, activeCategory }: GalleryGridProps) 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px] lg:auto-rows-[220px]">
             {filtered.map((item, i) => (
               <div key={`${item.src}-${i}`}
-                className={`campus-card animate-on-scroll-up cursor-pointer ${item.span || ''}`}
+                className={`campus-card cursor-pointer ${item.span || ''}`}
                 style={{ transitionDelay: `${(i % 8) * 60}ms` }}
                 onClick={() => setLightbox(item)}>
                 <Image src={item.src} alt={item.alt} fill className="object-cover" />

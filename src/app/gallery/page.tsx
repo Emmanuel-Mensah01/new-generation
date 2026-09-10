@@ -40,7 +40,7 @@ export default function GalleryPage() {
             <div className="flex items-center gap-2 overflow-x-auto pb-1">
               {(lang === 'sw' ? categories_sw : categories_en).map((cat, i) => (
                 <button key={cat} onClick={() => setActiveCategory(i)}
-                  className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeCategory === i ? 'bg-school-green text-white shadow-btn' : 'bg-school-muted text-school-muted hover:text-school-foreground hover:bg-school-border'}`}>
+                  className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeCategory === i ? 'bg-school-pink text-white shadow-btn' : 'bg-school-muted text-gray-500 hover:text-school-foreground hover:bg-school-border'}`}>
                   {cat}
                 </button>
               ))}
@@ -57,7 +57,7 @@ export default function GalleryPage() {
               <SparklesIcon className="w-3.5 h-3.5" />
               {lang === 'sw' ? 'Jiunge Nasi' : 'Join Our Community'}
             </div>
-            <h2 className="text-3xl font-extrabold text-school-foreground mb-4">
+            <h2 className="text-3xl font-extrabold text-school-green mb-4">
               {lang === 'sw' ? 'Mtoto Wako Anaweza Kuwa Sehemu ya Familia Hii' : 'Your Child Can Be Part of This Family'}
             </h2>
             <p className="text-school-muted mb-8 max-w-xl mx-auto">

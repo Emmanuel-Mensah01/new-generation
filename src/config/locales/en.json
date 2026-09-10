@@ -11,14 +11,14 @@
         "applyNow": "Apply Now"
     },
     "hero": {
-        "badge": "Admissions Open \u2014 2026/2027 Academic Year",
+        "badge": "Admissions Open \u2014 2025/2026 Academic Year",
         "headline1": "Where Every Child",
         "headline2": "Learns, Grows & Shines",
         "subtext": "New Generation Day Care Nursery & Primary School \u2014 nurturing curious minds, building strong character, and inspiring a lifelong love of learning in Tabata Chang'ombe, Dar es Salaam.",
         "badge1": "Quality Education",
         "badge2": "Safe Environment",
         "badge3": "NECTA Curriculum",
-        "badge4": "400+ Families",
+        "badge4": "200+ Families",
         "cta1": "Apply for Admission",
         "cta2": "Discover Our School",
         "phone": "+255 717 437 788",
@@ -153,7 +153,7 @@
     "testimonials": {
         "tag": "Parent Testimonials",
         "title": "Trusted by Families Who Care",
-        "subtitle": "400+ Families Trust New Generation School",
+        "subtitle": "200+ Families Trust New Generation School",
         "items": [
             {
                 "quote": "New Generation School has transformed my daughter completely. The teachers are dedicated, caring, and truly invested in every child's success. She looks forward to school every single day.",
@@ -178,7 +178,7 @@
         ]
     },
     "admissions": {
-        "tag": "Admissions Open \u2014 2026/2027",
+        "tag": "Admissions Open \u2014 2025/2026",
         "title": "Join the New Generation Family",
         "subtitle": "Our admissions process is simple, transparent, and designed to welcome every family warmly. Admission forms are available physically at the school.",
         "feeLabel": "Admission Form + Interview Fee: TZS 20,000",

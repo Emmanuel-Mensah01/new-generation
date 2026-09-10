@@ -9,7 +9,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: 'New Generation Day Care Nursery & Primary School — Learn · Grow · Shine',
-  description: 'New Generation Day Care Nursery & Primary School — A welcoming learning community in Tabata Chang\'ombe, Dar es Salaam. Admissions open for 2025/2026.',
+  description: 'New Generation Day Care Nursery & Primary School — A welcoming learning community in Tabata Chang\'ombe, Dar es Salaam. Admissions open for 2026/2027.',
   icons: {
     icon: [
       { url: '/favicon.ico', type: 'image/x-icon' }

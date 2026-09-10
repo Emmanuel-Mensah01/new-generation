@@ -96,13 +96,13 @@ export default function ProgrammesSection({ lang }: ProgrammesSectionProps) {
             {t.academics.tag}
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-school-foreground">{t.academics.title}</h2>
-          <p className="text-school-muted max-w-2xl mx-auto">{t.academics.subtitle}</p>
+          <p className="text-gray-500 max-w-2xl mx-auto">{t.academics.subtitle}</p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-3 mb-12 animate-on-scroll">
           {tabs.map((tab, i) => (
             <button key={i} onClick={() => setActiveTab(i)}
-              className={`px-6 py-3 rounded-full font-semibold text-sm transition-all ${activeTab === i ? 'tab-active' : 'bg-white border border-school-border text-school-muted hover:border-school-green hover:text-school-green'}`}>
+              className={`px-6 py-3 rounded-full font-semibold text-sm transition-all ${activeTab === i ? 'tab-active' : 'bg-white border border-school-border text-gray-500 hover:border-school-pink hover:text-school-pink'}`}>
               {tab.label}
             </button>
           ))}
@@ -111,27 +111,27 @@ export default function ProgrammesSection({ lang }: ProgrammesSectionProps) {
         <div className="grid lg:grid-cols-2 gap-12 items-start animate-on-scroll">
           <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-card">
             <Image src={currentTab.image} alt={currentTab.alt} fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-school-green-dark/50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-school-pink-dark/50 to-transparent" />
             <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2">
-              <p className="font-bold text-sm text-school-green">{currentTab.title}</p>
-              <p className="text-xs text-school-muted">{currentTab.age}</p>
+              <p className="font-bold text-sm text-school-pink">{currentTab.title}</p>
+              <p className="text-xs text-gray-500">{currentTab.age}</p>
             </div>
           </div>
 
           <div className="space-y-6">
             <div>
-              <div className="inline-flex items-center gap-2 bg-school-green/10 text-school-green px-3 py-1.5 rounded-full text-xs font-bold mb-3">
+              <div className="inline-flex items-center gap-2 bg-school-pink/10 text-school-pink px-3 py-1.5 rounded-full text-xs font-bold mb-3">
                 <StarIcon className="w-3.5 h-3.5" />
                 {currentTab.age}
               </div>
-              <h3 className="text-2xl font-extrabold text-school-foreground mb-3">{currentTab.title}</h3>
-              <p className="text-school-muted leading-relaxed">{currentTab.desc}</p>
+              <h3 className="text-2xl font-extrabold text-school-green mb-3">{currentTab.title}</h3>
+              <p className="text-gray-500 leading-relaxed">{currentTab.desc}</p>
             </div>
 
             <div className="grid grid-cols-2 gap-3">
               {currentTab.highlights.map((h, i) => (
-                <div key={i} className="flex items-center gap-2 bg-school-off-white rounded-xl p-3 border border-school-border">
-                  <CheckCircleIcon className="w-4 h-4 text-school-green flex-shrink-0" />
+                <div key={i} className="flex items-center gap-2 bg-school-muted rounded-xl p-3 border border-school-border">
+                  <CheckCircleIcon className="w-4 h-4 text-school-pink flex-shrink-0" />
                   <span className="text-xs font-semibold text-school-foreground">{h}</span>
                 </div>
               ))}
@@ -143,9 +143,9 @@ export default function ProgrammesSection({ lang }: ProgrammesSectionProps) {
               </p>
               <div className="grid grid-cols-3 gap-2">
                 {currentTab.subjects.map((subj, i) => (
-                  <div key={i} className="flex flex-col items-center gap-1.5 bg-school-off-white rounded-xl p-3 border border-school-border text-center">
-                    <div className="w-8 h-8 rounded-lg bg-school-green/10 flex items-center justify-center">
-                      <subj.icon className="w-4 h-4 text-school-green" />
+                  <div key={i} className="flex flex-col items-center gap-1.5 bg-white rounded-xl p-3 border border-school-border text-center">
+                    <div className="w-8 h-8 rounded-lg bg-school-pink/10 flex items-center justify-center">
+                      <subj.icon className="w-4 h-4 text-school-pink" />
                     </div>
                     <span className="text-xs font-medium text-school-foreground leading-tight">{subj.label}</span>
                   </div>

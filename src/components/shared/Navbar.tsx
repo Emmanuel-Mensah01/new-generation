@@ -55,6 +55,7 @@ export default function Navbar({ lang, setLang, activePath = '/' }: NavbarProps)
       ],
     },
     { href: '/rules', label: lang === 'sw' ? 'Kanuni' : 'Rules', dropdown: null },
+    { href: '/graduation', label: lang === 'sw' ? 'Kuhitimu' : 'Graduation', dropdown: null },
     { href: '/admissions', label: t.nav.admissions, dropdown: null },
     { href: '/#contact', label: t.nav.contact, dropdown: null },
   ];
@@ -62,7 +63,7 @@ export default function Navbar({ lang, setLang, activePath = '/' }: NavbarProps)
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-nav border-b border-school-border`}>
       {/* Top info bar */}
-      <div className="hidden lg:block bg-school-green text-white">
+      <div className="hidden lg:block bg-school-pink text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 flex items-center justify-between text-xs">
           <div className="flex items-center gap-6">
             <a href="tel:+255717437788" className="flex items-center gap-1.5 hover:text-school-yellow transition-colors font-medium">
@@ -85,12 +86,12 @@ export default function Navbar({ lang, setLang, activePath = '/' }: NavbarProps)
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-            <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md group-hover:scale-105 transition-transform flex-shrink-0 border-2 border-school-yellow/30">
+            <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md group-hover:scale-105 transition-transform flex-shrink-0 border-2 border-school-pink/30">
               <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.05.23_PM-1788894389720.jpeg" alt="New Generation School Logo" width={40} height={40} className="w-full h-full object-cover" priority />
             </div>
             <div>
               <div className="font-extrabold text-sm text-school-green leading-tight">New Generation</div>
-              <div className="font-medium text-xs text-school-muted leading-tight">Nursery &amp; Primary School</div>
+              <div className="font-medium text-xs text-gray-500 leading-tight">Nursery &amp; Primary School</div>
             </div>
           </Link>
 
@@ -103,12 +104,12 @@ export default function Navbar({ lang, setLang, activePath = '/' }: NavbarProps)
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 {item.dropdown ? (
-                  <button className={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium transition-all ${activePath === item.href ? 'text-school-green bg-school-muted font-bold' : 'text-school-foreground hover:text-school-green hover:bg-school-muted/60'}`}>
+                  <button className={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium transition-all ${activePath === item.href ? 'text-school-pink bg-school-pink-muted font-bold' : 'text-school-foreground hover:text-school-pink hover:bg-school-pink-muted/60'}`}>
                     {item.label}
-                    <ChevronDownIcon className={`w-3.5 h-3.5 transition-transform duration-200 ${activeDropdown === item.href ? 'rotate-180 text-school-green' : 'text-school-muted'}`} />
+                    <ChevronDownIcon className={`w-3.5 h-3.5 transition-transform duration-200 ${activeDropdown === item.href ? 'rotate-180 text-school-pink' : 'text-gray-400'}`} />
                   </button>
                 ) : (
-                  <Link href={item.href} className={`flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all ${activePath === item.href ? 'text-school-green bg-school-muted font-bold' : 'text-school-foreground hover:text-school-green hover:bg-school-muted/60'}`}>
+                  <Link href={item.href} className={`flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all ${activePath === item.href ? 'text-white bg-school-pink font-bold' : 'text-school-foreground hover:text-school-pink hover:bg-school-pink-muted/60'}`}>
                     {item.label}
                   </Link>
                 )}
@@ -117,9 +118,9 @@ export default function Navbar({ lang, setLang, activePath = '/' }: NavbarProps)
                     <div className="p-2">
                       {item.dropdown.map((sub) => (
                         <Link key={sub.href} href={sub.href}
-                          className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-school-foreground hover:bg-school-muted/60 hover:text-school-green transition-all group">
-                          <div className="w-7 h-7 rounded-lg bg-school-muted/60 group-hover:bg-school-green/10 flex items-center justify-center flex-shrink-0 transition-colors">
-                            <sub.icon className="w-3.5 h-3.5 text-school-green" />
+                          className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-school-foreground hover:bg-school-pink-muted/60 hover:text-school-pink transition-all group">
+                          <div className="w-7 h-7 rounded-lg bg-school-pink-muted/60 group-hover:bg-school-pink/10 flex items-center justify-center flex-shrink-0 transition-colors">
+                            <sub.icon className="w-3.5 h-3.5 text-school-pink" />
                           </div>
                           <span className="font-medium">{sub.label}</span>
                         </Link>
@@ -133,12 +134,12 @@ export default function Navbar({ lang, setLang, activePath = '/' }: NavbarProps)
 
           <div className="flex items-center gap-2">
             <button onClick={() => setLang(lang === 'en' ? 'sw' : 'en')}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-full border border-school-border text-xs font-bold hover:bg-school-muted/60 transition-colors">
-              <span className={lang === 'en' ? 'text-school-green font-bold' : 'text-school-muted'}>EN</span>
-              <span className="text-school-muted">/</span>
-              <span className={lang === 'sw' ? 'text-school-green font-bold' : 'text-school-muted'}>SW</span>
+              className="flex items-center gap-1 px-3 py-1.5 rounded-full border border-school-border text-xs font-bold hover:bg-school-pink-muted/60 transition-colors">
+              <span className={lang === 'en' ? 'text-school-pink font-bold' : 'text-gray-400'}>EN</span>
+              <span className="text-gray-400">/</span>
+              <span className={lang === 'sw' ? 'text-school-pink font-bold' : 'text-gray-400'}>SW</span>
             </button>
-            <button className="lg:hidden p-2 rounded-lg hover:bg-school-muted/60 transition-colors" onClick={() => setMobileOpen(!mobileOpen)}>
+            <button className="lg:hidden p-2 rounded-lg hover:bg-school-pink-muted/60 transition-colors" onClick={() => setMobileOpen(!mobileOpen)}>
               {mobileOpen ? <XMarkIcon className="w-5 h-5" /> : <Bars3Icon className="w-5 h-5" />}
             </button>
           </div>
@@ -148,25 +149,25 @@ export default function Navbar({ lang, setLang, activePath = '/' }: NavbarProps)
       {/* Mobile nav */}
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-school-border px-4 py-4 space-y-1 max-h-[80vh] overflow-y-auto">
-          <div className="flex items-center gap-3 p-3 bg-school-muted/60 rounded-xl mb-3">
-            <PhoneIcon className="w-4 h-4 text-school-green flex-shrink-0" />
-            <a href="tel:+255717437788" className="text-sm font-semibold text-school-green">+255 717 437 788</a>
+          <div className="flex items-center gap-3 p-3 bg-school-pink-muted/60 rounded-xl mb-3">
+            <PhoneIcon className="w-4 h-4 text-school-pink flex-shrink-0" />
+            <a href="tel:+255717437788" className="text-sm font-semibold text-school-pink">+255 717 437 788</a>
           </div>
           {navStructure.map((item) => (
             <div key={item.href}>
               <Link href={item.href}
-                className="flex items-center justify-between py-2.5 px-3 rounded-xl text-sm font-semibold text-school-foreground hover:bg-school-muted/60 hover:text-school-green transition-colors"
+                className="flex items-center justify-between py-2.5 px-3 rounded-xl text-sm font-semibold text-school-foreground hover:bg-school-pink-muted/60 hover:text-school-pink transition-colors"
                 onClick={() => !item.dropdown && setMobileOpen(false)}>
                 {item.label}
-                {item.dropdown && <ChevronRightIcon className="w-4 h-4 text-school-muted" />}
+                {item.dropdown && <ChevronRightIcon className="w-4 h-4 text-gray-400" />}
               </Link>
               {item.dropdown && (
                 <div className="ml-4 mt-1 space-y-1 border-l-2 border-school-border pl-3">
                   {item.dropdown.map((sub) => (
                     <Link key={sub.href} href={sub.href}
-                      className="flex items-center gap-2 py-2 px-2 rounded-lg text-xs font-medium text-school-muted hover:text-school-green transition-colors"
+                      className="flex items-center gap-2 py-2 px-2 rounded-lg text-xs font-medium text-gray-500 hover:text-school-pink transition-colors"
                       onClick={() => setMobileOpen(false)}>
-                      <sub.icon className="w-3.5 h-3.5 text-school-green" />
+                      <sub.icon className="w-3.5 h-3.5 text-school-pink" />
                       {sub.label}
                     </Link>
                   ))}
@@ -175,7 +176,7 @@ export default function Navbar({ lang, setLang, activePath = '/' }: NavbarProps)
             </div>
           ))}
           <div className="pt-2">
-            <Link href="/admissions" className="btn-accent w-full justify-center" onClick={() => setMobileOpen(false)}>
+            <Link href="/admissions" className="btn-primary w-full justify-center" onClick={() => setMobileOpen(false)}>
               {t.nav.applyNow}
             </Link>
           </div>

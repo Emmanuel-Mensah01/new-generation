@@ -10,23 +10,26 @@ interface AcademicsHeroProps {
 
 export default function AcademicsHero({ lang }: AcademicsHeroProps) {
   return (
-    <section className="relative hero-gradient pt-[104px] lg:pt-[120px] pb-20 overflow-hidden">
-      <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-school-yellow/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
+    <section className="relative bg-[#FFF8F0] pt-[104px] lg:pt-[120px] pb-20 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 blob-pink opacity-50" />
+        <div className="absolute top-0 right-[180px] w-[280px] h-[280px] blob-yellow opacity-40" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 blob-green opacity-35" />
+        <div className="absolute top-24 right-16 w-2 h-2 bg-school-yellow rounded-full opacity-80 animate-pulse-soft" />
+        <div className="absolute bottom-16 left-20 w-2.5 h-2.5 bg-school-pink rounded-full opacity-50" />
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-white space-y-6">
-            <div className="inline-flex items-center gap-2 bg-school-yellow/20 border border-school-yellow/30 text-school-yellow px-4 py-2 rounded-full text-sm font-semibold">
+          <div className="space-y-6">
+            <div className="inline-flex items-center gap-2 bg-school-yellow border border-school-yellow-dark text-school-foreground px-4 py-2 rounded-full text-sm font-bold shadow-btn-yellow">
               <BookOpenIcon className="w-4 h-4" />
               {lang === 'sw' ? 'Programu za Masomo' : 'Academic Programmes'}
             </div>
-            <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-school-green">
               {lang === 'sw' ? 'Elimu Bora' : 'Quality Education'}{' '}
-              <span className="text-school-yellow">{lang === 'sw' ? 'kwa Kila Hatua' : 'at Every Stage'}</span>
+              <span className="text-school-pink">{lang === 'sw' ? 'kwa Kila Hatua' : 'at Every Stage'}</span>
             </h1>
-            <p className="text-white/80 text-lg leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed">
               {lang === 'sw' ?'Kutoka Huduma ya Mchana kupitia Chekechea na hadi Msingi — safari ya elimu ya hali ya juu bila kikwazo kwa kila mtoto.' :'From Day Care through Nursery and into Primary — a seamless, high-quality educational journey for every child in our care.'}
             </p>
             <div className="flex flex-wrap gap-3">
@@ -36,8 +39,8 @@ export default function AcademicsHero({ lang }: AcademicsHeroProps) {
                 lang === 'sw' ? 'Shule ya Msingi' : 'Primary',
                 lang === 'sw' ? 'Mtaala wa NECTA' : 'NECTA Curriculum',
               ].map((b) => (
-                <div key={b} className="flex items-center gap-1.5 bg-white/10 border border-white/20 text-white/90 px-3 py-1.5 rounded-full text-xs font-semibold">
-                  <CheckCircleIcon className="w-3.5 h-3.5 text-school-yellow" />
+                <div key={b} className="flex items-center gap-1.5 bg-white border border-school-border text-school-foreground px-3 py-1.5 rounded-full text-xs font-semibold shadow-card">
+                  <CheckCircleIcon className="w-3.5 h-3.5 text-school-green" />
                   {b}
                 </div>
               ))}

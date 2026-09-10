@@ -10,7 +10,7 @@ interface OurStorySectionProps {
 
 export default function OurStorySection({ lang }: OurStorySectionProps) {
   const stats = [
-    { label: lang === 'sw' ? 'Wanafunzi' : 'Students', value: '200+', icon: '👨‍🎓' },
+    { label: lang === 'sw' ? 'Wanafunzi' : 'Students', value: '400+', icon: '👨‍🎓' },
     { label: lang === 'sw' ? 'Walimu' : 'Teachers', value: '20+', icon: '👩‍🏫' },
     { label: lang === 'sw' ? 'Miaka ya Uzoefu' : 'Years Experience', value: '5+', icon: '🏆' },
     { label: lang === 'sw' ? 'Kuridhika kwa Wazazi' : 'Parent Satisfaction', value: '98%', icon: '⭐' },
@@ -42,10 +42,10 @@ export default function OurStorySection({ lang }: OurStorySectionProps) {
             </div>
             <div className="mt-8 grid grid-cols-2 gap-4">
               {stats.map((stat) => (
-                <div key={stat.label} className="bg-school-off-white rounded-2xl p-4 border border-school-border">
+                <div key={stat.label} className="bg-school-muted rounded-2xl p-4 border border-school-border">
                   <div className="text-2xl mb-1">{stat.icon}</div>
-                  <div className="text-2xl font-extrabold text-school-green">{stat.value}</div>
-                  <div className="text-xs text-school-muted font-medium mt-0.5">{stat.label}</div>
+                  <div className="text-2xl font-extrabold text-school-pink">{stat.value}</div>
+                  <div className="text-xs text-gray-500 font-medium mt-0.5">{stat.label}</div>
                 </div>
               ))}
             </div>

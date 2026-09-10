@@ -85,14 +85,14 @@ export default function ApplicationForm({ lang }: ApplicationFormProps) {
           <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
             {PROCESS_STEPS.map((step, i) => (
               <div key={i} className={`relative text-center cursor-pointer transition-all ${activeStep === i ? 'scale-105' : ''}`} onClick={() => setActiveStep(i)}>
-                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 transition-all ${activeStep === i ? 'bg-school-green shadow-btn' : 'bg-school-muted hover:bg-school-green/20'}`}>
+                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 transition-all ${activeStep === i ? 'bg-school-pink shadow-btn' : 'bg-white hover:bg-school-pink/20'}`}>
                   {step.icon}
                 </div>
-                <div className={`absolute -top-2 -right-2 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${activeStep === i ? 'bg-school-yellow text-school-foreground' : 'bg-school-border text-school-muted'}`}>
+                <div className={`absolute -top-2 -right-2 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${activeStep === i ? 'bg-school-yellow text-school-foreground' : 'bg-white text-gray-400'}`}>
                   {i + 1}
                 </div>
                 <p className="font-bold text-sm text-school-foreground mb-1">{step.title}</p>
-                <p className="text-xs text-school-muted leading-relaxed">{step.desc}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -107,7 +107,7 @@ export default function ApplicationForm({ lang }: ApplicationFormProps) {
             <div className="lg:col-span-2">
               <div className="bg-white rounded-3xl border border-school-border shadow-card p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-school-green flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-school-pink flex items-center justify-center">
                     <DocumentTextIcon className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -118,8 +118,8 @@ export default function ApplicationForm({ lang }: ApplicationFormProps) {
 
                 {submitted ? (
                   <div className="text-center py-12 space-y-4">
-                    <div className="w-20 h-20 rounded-full bg-school-green/10 flex items-center justify-center mx-auto">
-                      <CheckCircleIcon className="w-10 h-10 text-school-green" />
+                    <div className="w-20 h-20 rounded-full bg-school-pink/10 flex items-center justify-center mx-auto">
+                      <CheckCircleIcon className="w-10 h-10 text-school-pink" />
                     </div>
                     <h3 className="text-2xl font-extrabold text-school-foreground">{t.admissions.successTitle}</h3>
                     <p className="text-school-muted max-w-md mx-auto">{t.admissions.successMsg}</p>
@@ -139,27 +139,27 @@ export default function ApplicationForm({ lang }: ApplicationFormProps) {
                       <div>
                         <label className="block text-sm font-semibold text-school-foreground mb-1.5">{t.admissions.parentName} <span className="text-red-500">*</span></label>
                         <div className="relative">
-                          <UserIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-school-muted" />
-                          <input type="text" name="parentName" value={form.parentName} onChange={handleChange} required placeholder={lang === 'sw' ? 'Jina lako kamili' : 'Your full name'} className="w-full pl-10 pr-4 py-3 rounded-xl border border-school-border bg-school-off-white text-sm text-school-foreground placeholder:text-school-muted focus:outline-none focus:border-school-green focus:ring-2 focus:ring-school-green/20 transition-all" />
+                          <UserIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                          <input type="text" name="parentName" value={form.parentName} onChange={handleChange} required placeholder={lang === 'sw' ? 'Jina lako kamili' : 'Your full name'} className="w-full pl-10 pr-4 py-3 rounded-xl border border-school-border bg-white text-sm text-school-foreground placeholder:text-gray-400 focus:outline-none focus:border-school-pink focus:ring-2 focus:ring-school-pink/20 transition-all" />
                         </div>
                       </div>
                       <div>
                         <label className="block text-sm font-semibold text-school-foreground mb-1.5">{t.admissions.childName} <span className="text-red-500">*</span></label>
                         <div className="relative">
-                          <AcademicCapIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-school-muted" />
-                          <input type="text" name="childName" value={form.childName} onChange={handleChange} required placeholder={lang === 'sw' ? 'Jina la mtoto' : "Child's full name"} className="w-full pl-10 pr-4 py-3 rounded-xl border border-school-border bg-school-off-white text-sm text-school-foreground placeholder:text-school-muted focus:outline-none focus:border-school-green focus:ring-2 focus:ring-school-green/20 transition-all" />
+                          <AcademicCapIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                          <input type="text" name="childName" value={form.childName} onChange={handleChange} required placeholder={lang === 'sw' ? 'Jina la mtoto' : "Child's full name"} className="w-full pl-10 pr-4 py-3 rounded-xl border border-school-border bg-white text-sm text-school-foreground placeholder:text-gray-400 focus:outline-none focus:border-school-pink focus:ring-2 focus:ring-school-pink/20 transition-all" />
                         </div>
                       </div>
                       <div>
                         <label className="block text-sm font-semibold text-school-foreground mb-1.5">{t.admissions.phone} <span className="text-red-500">*</span></label>
                         <div className="relative">
-                          <PhoneIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-school-muted" />
-                          <input type="tel" name="phone" value={form.phone} onChange={handleChange} required placeholder="+255 7XX XXX XXX" className="w-full pl-10 pr-4 py-3 rounded-xl border border-school-border bg-school-off-white text-sm text-school-foreground placeholder:text-school-muted focus:outline-none focus:border-school-green focus:ring-2 focus:ring-school-green/20 transition-all" />
+                          <PhoneIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                          <input type="tel" name="phone" value={form.phone} onChange={handleChange} required placeholder="+255 7XX XXX XXX" className="w-full pl-10 pr-4 py-3 rounded-xl border border-school-border bg-white text-sm text-school-foreground placeholder:text-gray-400 focus:outline-none focus:border-school-pink focus:ring-2 focus:ring-school-pink/20 transition-all" />
                         </div>
                       </div>
                       <div>
                         <label className="block text-sm font-semibold text-school-foreground mb-1.5">{t.admissions.grade} <span className="text-red-500">*</span></label>
-                        <select name="grade" value={form.grade} onChange={handleChange} required className="w-full px-4 py-3 rounded-xl border border-school-border bg-school-off-white text-sm text-school-foreground focus:outline-none focus:border-school-green focus:ring-2 focus:ring-school-green/20 transition-all">
+                        <select name="grade" value={form.grade} onChange={handleChange} required className="w-full px-4 py-3 rounded-xl border border-school-border bg-white text-sm text-school-foreground focus:outline-none focus:border-school-pink focus:ring-2 focus:ring-school-pink/20 transition-all">
                           <option value="">{lang === 'sw' ? 'Chagua darasa...' : 'Select grade...'}</option>
                           {GRADES.map((g) => <option key={g} value={g}>{g}</option>)}
                         </select>
@@ -167,27 +167,27 @@ export default function ApplicationForm({ lang }: ApplicationFormProps) {
                       <div>
                         <label className="block text-sm font-semibold text-school-foreground mb-1.5">{t.admissions.date} <span className="text-red-500">*</span></label>
                         <div className="relative">
-                          <CalendarIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-school-muted" />
-                          <input type="date" name="date" value={form.date} onChange={handleChange} required className="w-full pl-10 pr-4 py-3 rounded-xl border border-school-border bg-school-off-white text-sm text-school-foreground focus:outline-none focus:border-school-green focus:ring-2 focus:ring-school-green/20 transition-all" />
+                          <CalendarIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                          <input type="date" name="date" value={form.date} onChange={handleChange} required className="w-full pl-10 pr-4 py-3 rounded-xl border border-school-border bg-white text-sm text-school-foreground focus:outline-none focus:border-school-pink focus:ring-2 focus:ring-school-pink/20 transition-all" />
                         </div>
                       </div>
                       <div>
                         <label className="block text-sm font-semibold text-school-foreground mb-1.5">{t.admissions.time} <span className="text-red-500">*</span></label>
                         <div className="relative">
-                          <ClockIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-school-muted" />
-                          <input type="time" name="time" value={form.time} onChange={handleChange} required className="w-full pl-10 pr-4 py-3 rounded-xl border border-school-border bg-school-off-white text-sm text-school-foreground focus:outline-none focus:border-school-green focus:ring-2 focus:ring-school-green/20 transition-all" />
+                          <ClockIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                          <input type="time" name="time" value={form.time} onChange={handleChange} required className="w-full pl-10 pr-4 py-3 rounded-xl border border-school-border bg-white text-sm text-school-foreground focus:outline-none focus:border-school-pink focus:ring-2 focus:ring-school-pink/20 transition-all" />
                         </div>
                       </div>
                     </div>
                     <div>
                       <label className="block text-sm font-semibold text-school-foreground mb-1.5">{lang === 'sw' ? 'Maelezo ya Ziada (Hiari)' : 'Additional Notes (Optional)'}</label>
-                      <textarea name="notes" value={form.notes} onChange={handleChange} rows={3} placeholder={lang === 'sw' ? 'Maelezo yoyote ya ziada...' : 'Any additional information...'} className="w-full px-4 py-3 rounded-xl border border-school-border bg-school-off-white text-sm text-school-foreground placeholder:text-school-muted focus:outline-none focus:border-school-green focus:ring-2 focus:ring-school-green/20 transition-all resize-none" />
+                      <textarea name="notes" value={form.notes} onChange={handleChange} rows={3} placeholder={lang === 'sw' ? 'Maelezo yoyote ya ziada...' : 'Any additional information...'} className="w-full px-4 py-3 rounded-xl border border-school-border bg-white text-sm text-school-foreground placeholder:text-gray-400 focus:outline-none focus:border-school-pink focus:ring-2 focus:ring-school-pink/20 transition-all resize-none" />
                     </div>
                     <div className="bg-school-yellow/10 border border-school-yellow/30 rounded-xl p-4 flex items-start gap-3">
                       <ShieldCheckIcon className="w-5 h-5 text-school-yellow flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="font-bold text-sm text-school-foreground">{t.admissions.noteTitle}</p>
-                        <p className="text-xs text-school-muted mt-1">{t.admissions.noteText}</p>
+                        <p className="text-xs text-gray-600 mt-1">{t.admissions.noteText}</p>
                       </div>
                     </div>
                     {submitError && <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-sm text-red-700">{submitError}</div>}
@@ -204,22 +204,22 @@ export default function ApplicationForm({ lang }: ApplicationFormProps) {
             <div className="space-y-6">
               <div className="bg-white rounded-3xl border border-school-border shadow-card p-6">
                 <div className="flex items-center gap-2 mb-5">
-                  <CheckCircleIcon className="w-5 h-5 text-school-green" />
+                  <CheckCircleIcon className="w-5 h-5 text-school-pink" />
                   <h3 className="font-extrabold text-lg text-school-foreground">{t.admissions.requirementsTitle}</h3>
                 </div>
                 <div className="space-y-3">
                   {REQUIREMENTS.map((req, i) => (
                     <div key={i} className="flex items-start gap-2">
-                      <div className="w-5 h-5 rounded-full bg-school-green/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckCircleIcon className="w-3 h-3 text-school-green" />
+                      <div className="w-5 h-5 rounded-full bg-school-pink/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <CheckCircleIcon className="w-3 h-3 text-school-pink" />
                       </div>
-                      <p className="text-sm text-school-muted">{req}</p>
+                      <p className="text-sm text-gray-500">{req}</p>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="bg-school-green rounded-3xl p-6 text-white">
+              <div className="bg-school-pink rounded-3xl p-6 text-white">
                 <h3 className="font-extrabold text-lg mb-4">{lang === 'sw' ? 'Una Maswali?' : 'Have Questions?'}</h3>
                 <p className="text-white/80 text-sm mb-5">{lang === 'sw' ? 'Timu yetu iko hapa kukusaidia.' : 'Our team is here to help. Contact us by phone or WhatsApp.'}</p>
                 <div className="space-y-3">
@@ -238,7 +238,7 @@ export default function ApplicationForm({ lang }: ApplicationFormProps) {
                   <ShieldCheckIcon className="w-5 h-5 text-school-yellow" />
                   <p className="font-bold text-sm text-school-foreground">{t.admissions.noteTitle}</p>
                 </div>
-                <p className="text-xs text-school-muted">{t.admissions.noteText}</p>
+                <p className="text-xs text-gray-600">{t.admissions.noteText}</p>
               </div>
             </div>
           </div>

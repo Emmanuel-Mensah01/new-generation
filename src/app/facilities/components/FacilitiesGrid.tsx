@@ -16,7 +16,7 @@ export default function FacilitiesGrid({ lang }: FacilitiesGridProps) {
       icon: BuildingLibraryIcon,
       title: lang === 'sw' ? 'Madarasa ya Kisasa' : 'Modern Classrooms',
       desc: lang === 'sw' ? 'Madarasa yetu yenye mwanga mzuri yamepambwa kwa vifaa vya kielimu, mabango ya rangi na mazingira ya kujifunza yanayovutia watoto.' : 'Our bright, well-ventilated classrooms are equipped with educational materials, colourful displays and a stimulating learning environment for every child.',
-      image: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg',
+      image: '/assets/images/mor classroom.png',
       alt: 'Bright classroom with students in white and yellow uniforms at New Generation School',
       badge: lang === 'sw' ? 'Darasa la Kisasa' : 'Modern Learning',
       features: [lang === 'sw' ? 'Mwanga mzuri' : 'Natural lighting', lang === 'sw' ? 'Vifaa vya kisasa' : 'Modern equipment', lang === 'sw' ? 'Mazingira ya kuvutia' : 'Stimulating displays'],
@@ -25,7 +25,7 @@ export default function FacilitiesGrid({ lang }: FacilitiesGridProps) {
       icon: BeakerIcon,
       title: lang === 'sw' ? 'Maabara ya Sayansi' : 'Science Laboratory',
       desc: lang === 'sw' ? 'Maabara yetu ya kisasa ya sayansi inawapa wanafunzi fursa ya kufanya majaribio ya vitendo, kukuza udadisi na kupenda sayansi tangu wakiwa wadogo.' : 'Our modern science laboratory gives students the opportunity to conduct hands-on experiments, nurturing curiosity and a love of science from an early age.',
-      image: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg',
+      image: '/assets/images/sch_lab-1789024389935.png',
       alt: 'Modern science laboratory at New Generation School with equipment and bright lighting',
       badge: lang === 'sw' ? 'Maabara ya Kisasa' : 'Hands-On Science',
       features: [lang === 'sw' ? 'Vifaa vya majaribio' : 'Lab equipment', lang === 'sw' ? 'Walimu wabobezi' : 'Expert teachers', lang === 'sw' ? 'Mtaala wa NECTA' : 'NECTA aligned'],
@@ -34,7 +34,7 @@ export default function FacilitiesGrid({ lang }: FacilitiesGridProps) {
       icon: BookOpenIcon,
       title: lang === 'sw' ? 'Maktaba & Rasilimali' : 'Library & Resources',
       desc: lang === 'sw' ? 'Maktaba yetu ina vitabu mbalimbali vya kielimu, rasilimali za kujifunza na mazingira ya utulivu yanayohimiza upendo wa kusoma.' : 'Our library holds a wide range of educational books, learning resources and a quiet environment that encourages a love of reading and independent study.',
-      image: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788894592396.jpeg',
+      image: '/assets/images/ChatGPT_Image_Sep_10__2026__07_17_53_AM-1789024697690.png',
       alt: 'Library and reading area with educational books and resources at New Generation School',
       badge: lang === 'sw' ? 'Vitabu & Rasilimali' : 'Books & Resources',
       features: [lang === 'sw' ? 'Vitabu vingi' : 'Wide book range', lang === 'sw' ? 'Mazingira ya utulivu' : 'Quiet study space', lang === 'sw' ? 'Rasilimali za kujifunza' : 'Learning resources'],
@@ -43,7 +43,7 @@ export default function FacilitiesGrid({ lang }: FacilitiesGridProps) {
       icon: SparklesIcon,
       title: lang === 'sw' ? 'Eneo la Michezo' : 'Sports & Play Area',
       desc: lang === 'sw' ? 'Eneo letu la michezo na kucheza linatoa nafasi kwa wanafunzi kukua kimwili, kujifunza kufanya kazi kwa pamoja na kufurahia wakati wa mapumziko.' : 'Our sports and play area provides space for physical development, teamwork and enjoyment during break times, supporting the overall wellbeing of every child.',
-      image: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788895053341.jpeg',
+      image: '/assets/images/sports-1789024397944.png',
       alt: 'Students enjoying outdoor play and sports at New Generation School',
       badge: lang === 'sw' ? 'Michezo & Burudani' : 'Active & Healthy',
       features: [lang === 'sw' ? 'Michezo ya nje' : 'Outdoor sports', lang === 'sw' ? 'Kazi ya pamoja' : 'Team activities', lang === 'sw' ? 'Ustawi wa kimwili' : 'Physical wellbeing'],
@@ -61,7 +61,7 @@ export default function FacilitiesGrid({ lang }: FacilitiesGridProps) {
       icon: ShieldCheckIcon,
       title: lang === 'sw' ? 'Mazingira Salama' : 'Safe & Secure Campus',
       desc: lang === 'sw' ? 'Usalama wa watoto wetu ni kipaumbele chetu. Kampasi yetu ina uzio imara, milango inayodhibitiwa na uangalizi wa kila wakati.' : 'The safety of our children is our top priority. Our campus features secure fencing, controlled entry points and constant supervision throughout the school day.',
-      image: '/assets/images/WhatsApp_Image_2026-09-08_at_7.05.57_PM-1788894591347.jpeg',
+      image: '/assets/images/hall2-1789022264017.png',
       alt: 'Secure and welcoming New Generation School campus with fencing and garden',
       badge: lang === 'sw' ? 'Usalama wa Kwanza' : 'Safety First',
       features: [lang === 'sw' ? 'Uzio imara' : 'Secure fencing', lang === 'sw' ? 'Milango inayodhibitiwa' : 'Controlled entry', lang === 'sw' ? 'Uangalizi wa kila wakati' : 'Constant supervision'],
@@ -76,10 +76,10 @@ export default function FacilitiesGrid({ lang }: FacilitiesGridProps) {
             <BuildingLibraryIcon className="w-3.5 h-3.5" />
             {lang === 'sw' ? 'Vifaa Vyetu' : 'Our Facilities'}
           </div>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-school-foreground">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-school-green">
             {lang === 'sw' ? 'Vifaa Vilivyoundwa kwa Kujifunza' : 'Spaces Built for Learning'}
           </h2>
-          <p className="text-school-muted mt-3 max-w-xl mx-auto">
+          <p className="text-gray-500 mt-3 max-w-xl mx-auto">
             {lang === 'sw' ? 'Kila eneo la kampasi yetu limeundwa kwa makini kusaidia ukuaji wa kila mtoto.' : 'Every area of our campus is carefully designed to support the growth of every child.'}
           </p>
         </div>
@@ -88,16 +88,16 @@ export default function FacilitiesGrid({ lang }: FacilitiesGridProps) {
           {facilities.map((facility, i) => (
             <div key={facility.title} className={`grid lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
               <div className={`animate-on-scroll-${i % 2 === 0 ? 'left' : 'right'} space-y-5 ${i % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                <div className="inline-flex items-center gap-2 bg-school-muted rounded-full px-3 py-1.5 text-xs font-bold text-school-green">
+                <div className="inline-flex items-center gap-2 bg-school-pink/10 rounded-full px-3 py-1.5 text-xs font-bold text-school-pink">
                   <facility.icon className="w-3.5 h-3.5" />
                   {facility.badge}
                 </div>
-                <h3 className="text-2xl lg:text-3xl font-extrabold text-school-foreground leading-tight">{facility.title}</h3>
-                <p className="text-school-muted leading-relaxed">{facility.desc}</p>
+                <h3 className="text-2xl lg:text-3xl font-extrabold text-school-green leading-tight">{facility.title}</h3>
+                <p className="text-gray-500 leading-relaxed">{facility.desc}</p>
                 <div className="grid grid-cols-3 gap-3">
                   {facility.features.map((feat) => (
-                    <div key={feat} className="bg-school-off-white rounded-xl p-3 border border-school-border text-center">
-                      <CheckCircleIcon className="w-4 h-4 text-school-green mx-auto mb-1.5" />
+                    <div key={feat} className="bg-school-muted rounded-xl p-3 border border-school-border text-center">
+                      <CheckCircleIcon className="w-4 h-4 text-school-pink mx-auto mb-1.5" />
                       <p className="text-xs font-semibold text-school-foreground leading-tight">{feat}</p>
                     </div>
                   ))}

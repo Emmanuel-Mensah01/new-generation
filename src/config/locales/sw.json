@@ -11,14 +11,14 @@
         "applyNow": "Omba Sasa"
     },
     "hero": {
-        "badge": "Usajili Wazi \u2014 Mwaka wa Masomo 2026/2027",
+        "badge": "Usajili Wazi \u2014 Mwaka wa Masomo 2025/2026",
         "headline1": "Mahali Kila Mtoto",
         "headline2": "Anajifunza, Anakua & Anang'aa",
         "subtext": "Shule ya Chekechea na Msingi ya New Generation \u2014 inayolisha akili za udadisi, kujenga tabia imara, na kuhamasisha upendo wa kujifunza maishani yote huko Tabata Chang'ombe, Dar es Salaam.",
         "badge1": "Elimu Bora",
         "badge2": "Mazingira Salama",
         "badge3": "Mtaala wa NECTA",
-        "badge4": "Familia 400+",
+        "badge4": "Familia 200+",
         "cta1": "Omba Usajili",
         "cta2": "Gundua Shule Yetu",
         "phone": "+255 717 437 788",
@@ -153,7 +153,7 @@
     "testimonials": {
         "tag": "Ushuhuda wa Wazazi",
         "title": "Wanaoaminiwa na Familia Zinazojali",
-        "subtitle": "Familia 400+ Zinamwamini New Generation School",
+        "subtitle": "Familia 200+ Zinamwamini New Generation School",
         "items": [
             {
                 "quote": "Shule ya New Generation imebadilisha binti yangu kabisa. Walimu wanajitolea, wanajali, na kweli wanawekeza katika mafanikio ya kila mtoto. Yeye anatazamia shule kila siku.",
@@ -178,7 +178,7 @@
         ]
     },
     "admissions": {
-        "tag": "Usajili Wazi \u2014 2026/2027",
+        "tag": "Usajili Wazi \u2014 2025/2026",
         "title": "Jiunge na Familia ya New Generation",
         "subtitle": "Mchakato wetu wa usajili ni rahisi, wazi, na umeundwa kukaribisha kila familia kwa upole. Fomu za usajili zinapatikana kimwili shuleni.",
         "feeLabel": "Fomu ya Usajili + Ada ya Mahojiano: TZS 20,000",
