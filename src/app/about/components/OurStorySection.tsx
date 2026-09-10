@@ -10,9 +10,9 @@ interface OurStorySectionProps {
 
 export default function OurStorySection({ lang }: OurStorySectionProps) {
   const stats = [
-    { label: lang === 'sw' ? 'Wanafunzi' : 'Students', value: '400+', icon: '👨‍🎓' },
+    { label: lang === 'sw' ? 'Wanafunzi' : 'Students', value: '500+', icon: '👨‍🎓' },
     { label: lang === 'sw' ? 'Walimu' : 'Teachers', value: '20+', icon: '👩‍🏫' },
-    { label: lang === 'sw' ? 'Miaka ya Uzoefu' : 'Years Experience', value: '5+', icon: '🏆' },
+    { label: lang === 'sw' ? 'Miaka ya Uzoefu' : 'Years Experience', value: '10+', icon: '🏆' },
     { label: lang === 'sw' ? 'Kuridhika kwa Wazazi' : 'Parent Satisfaction', value: '98%', icon: '⭐' },
   ];
 
