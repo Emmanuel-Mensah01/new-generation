@@ -20,7 +20,7 @@ const LEADERSHIP = [
 ] as const;
 
 const LEADERSHIP_TEXT: Record<string, { nameEn: string; nameSw: string; subEn: string; subSw: string }> = {
-  director: { nameEn: 'Director', nameSw: 'Mkurugenzi', subEn: 'Overall school vision & strategic leadership', subSw: 'Maono ya jumla ya shule na uongozi wa kimkakati' },
+  director: { nameEn: 'Florah Assenga', nameSw: 'Florah Assenga', subEn: 'Founder, Director & strategic leadership', subSw: 'Mwanzilishi, Mkurugenzi na uongozi wa kimkakati' },
   manager: { nameEn: 'School Manager', nameSw: 'Meneja wa Shule', subEn: 'Day-to-day operations & administration', subSw: 'Uendeshaji wa kila siku na usimamizi' },
   committee: { nameEn: 'Parent Committee', nameSw: 'Kamati ya Wazazi', subEn: 'Community liaison & support', subSw: 'Uhusiano na jamii na msaada' },
   bursar: { nameEn: 'Bursar', nameSw: 'Bwana Hazina', subEn: 'Financial management', subSw: 'Usimamizi wa fedha' },
@@ -60,7 +60,7 @@ export default function LeadershipSection({ lang }: LeadershipSectionProps) {
             <div className="lg:col-span-2 relative min-h-[320px] lg:min-h-[420px]">
               <Image
                 src="/assets/images/founder.png"
-                alt={lang === 'sw' ? 'Mwanzilishi wa New Generation' : 'Founder of New Generation School'}
+                alt={lang === 'sw' ? 'Florah Assenga, Mwanzilishi wa New Generation' : 'Florah Assenga, Founder of New Generation School'}
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -77,15 +77,15 @@ export default function LeadershipSection({ lang }: LeadershipSectionProps) {
                 {lang === 'sw' ? 'Mwanzilishi' : 'Founder'}
               </div>
               <h3 className="text-3xl sm:text-4xl font-extrabold text-white mb-2">
-                {lang === 'sw' ? 'Jina la Mwanzilishi' : 'Founder Name'}
+                Florah Assenga
               </h3>
               <p className="text-school-yellow font-semibold text-sm mb-6">
                 {lang === 'sw' ? 'Mwanzilishi na Mkurugenzi Mtendaji' : 'Founder & Executive Director'}
               </p>
               <p className="text-white/80 leading-relaxed max-w-xl">
                 {lang === 'sw'
-                  ? 'Mwanzilishi wa New Generation aliweka msingi wa shule hii kwa dhamira ya kutoa elimu bora, mazingira salama, na fursa sawa kwa kila mtoto katika jamii.'
-                  : 'The founder of New Generation established the school with a vision to provide quality education, a safe environment, and equal opportunity for every child in the community.'}
+                  ? 'Florah Assenga aliweka msingi wa shule hii kwa dhamira ya kutoa elimu bora, mazingira salama, na fursa sawa kwa kila mtoto katika jamii.'
+                  : 'Florah Assenga established the school with a vision to provide quality education, a safe environment, and equal opportunity for every child in the community.'}
               </p>
             </div>
           </div>
