@@ -48,7 +48,7 @@ export default function AcademicsHero({ lang }: AcademicsHeroProps) {
           </div>
           <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-hero">
             <Image
-              src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM-1788894592396.jpeg"
+              src="/assets/images/ChatGPT_Image_Sep_10__2026__06_59_32_AM-1789023678596.png"
               alt="Teacher with students engaged in learning at New Generation School"
               fill
               className="object-cover"

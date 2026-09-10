@@ -28,7 +28,7 @@ export default function OurStorySection({ lang }: OurStorySectionProps) {
             <h2 className="text-3xl lg:text-4xl font-extrabold text-school-foreground mb-6 leading-tight">
               {lang === 'sw' ? 'Shule ya Karibu Yenye Maono ya Ubora' : 'A Welcoming School With a Vision for Excellence'}
             </h2>
-            <div className="space-y-4 text-school-muted leading-relaxed">
+            <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
                 {lang === 'sw' ?'Shule ya Chekechea na Msingi ya New Generation ni jumuiya ya kujifunza inayokaribisha, iliyojitolea kutoa msingi imara wa elimu kwa watoto katika mazingira salama, ya kusaidia na ya kuvutia.' :'New Generation Day Care Nursery & Primary School is a welcoming learning community committed to providing children with a strong educational foundation in a safe, supportive and engaging environment.'}
               </p>
@@ -42,7 +42,7 @@ export default function OurStorySection({ lang }: OurStorySectionProps) {
             </div>
             <div className="mt-8 grid grid-cols-2 gap-4">
               {stats.map((stat) => (
-                <div key={stat.label} className="bg-school-muted rounded-2xl p-4 border border-school-border">
+                <div key={stat.label} className="bg-white rounded-2xl p-4 border border-school-border shadow-sm">
                   <div className="text-2xl mb-1">{stat.icon}</div>
                   <div className="text-2xl font-extrabold text-school-pink">{stat.value}</div>
                   <div className="text-xs text-gray-500 font-medium mt-0.5">{stat.label}</div>
@@ -57,7 +57,7 @@ export default function OurStorySection({ lang }: OurStorySectionProps) {
               </div>
               <div className="space-y-4">
                 <div className="rounded-3xl overflow-hidden aspect-square shadow-card relative">
-                  <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg" alt="Learning environment at New Generation School" fill className="object-cover" />
+                  <Image src="/assets/images/ChatGPT_Image_Sep_6__2026__03_35_32_PM-1788890911576.png" alt="Learning environment at New Generation School" fill className="object-cover" />
                 </div>
                 <div className="rounded-3xl overflow-hidden aspect-square shadow-card relative">
                   <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.06.03_PM-1788895054202.jpeg" alt="Students and teachers at New Generation School" fill className="object-cover" />

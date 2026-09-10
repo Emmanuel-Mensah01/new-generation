@@ -46,7 +46,7 @@ export default function AboutHero({ lang }: AboutHeroProps) {
           </div>
           <div className="relative animate-fade-in">
             <div className="rounded-3xl overflow-hidden shadow-hero aspect-[4/3]">
-              <Image src="/assets/images/WhatsApp_Image_2026-09-08_at_7.05.57_PM-1788894591347.jpeg" alt="New Generation School main building with Tanzanian flag and colorful garden" fill className="object-cover" priority />
+              <Image src="/assets/images/ChatGPT_Image_Sep_9__2026__08_21_56_AM-1788943777277.png" alt="New Generation School main building with Tanzanian flag and colorful garden" fill className="object-cover" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-school-green-dark/40 to-transparent" />
             </div>
             <div className="absolute -bottom-5 -left-5 bg-school-yellow rounded-2xl p-4 shadow-float">

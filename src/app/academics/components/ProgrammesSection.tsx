@@ -19,7 +19,7 @@ export default function ProgrammesSection({ lang }: ProgrammesSectionProps) {
       title: t.academics.dayTitle,
       age: t.academics.dayAge,
       desc: t.academics.dayDesc,
-      image: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__1_-1788894589650.jpeg',
+      image: '/assets/images/ChatGPT_Image_Sep_6__2026__03_37_04_PM-1788890914979.png',
       alt: 'Day care children in bright, colourful classroom at New Generation School',
       applyLabel: t.academics.applyDay,
       subjects: [
@@ -42,7 +42,7 @@ export default function ProgrammesSection({ lang }: ProgrammesSectionProps) {
       title: t.academics.nurseryTitle,
       age: t.academics.nurseryAge,
       desc: t.academics.nurseryDesc,
-      image: '/assets/images/WhatsApp_Image_2026-09-08_at_7.06.02_PM__2_-1788894592616.jpeg',
+      image: '/assets/images/ChatGPT_Image_Sep_6__2026__03_39_26_PM-1788890914978.png',
       alt: 'Nursery classroom with colourful educational displays and happy children',
       applyLabel: t.academics.applyNursery,
       subjects: [
